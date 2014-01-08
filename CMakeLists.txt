@@ -4,6 +4,7 @@
 # <author>  Tran Minh Quan. edit by Johannes Kast, Michael Sarahan 			</author>
 # <email>   quantm@unist.ac.kr  kast.jo@googlemail.com msarahan@gmail.com	</email>
 ############################################################################################
+project(hetero13)
 cmake_minimum_required(VERSION 2.6 FATAL_ERROR)
 find_package(CUDA REQUIRED)
 # collect source files

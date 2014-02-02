@@ -10,20 +10,22 @@
 /***********************************************************/
 /***********************************************************/
 
-#include    <stdio.h>
-#include    <stdlib.h>
-
 #ifdef _MSC_VER
-#include    <windows.h>
-#include	<direct.h>
-#include	<io.h>
 #define __func__					__FUNCTION__
 #ifndef _CRT_SECURE_NO_WARNINGS
 #define _CRT_SECURE_NO_WARNINGS		1
 #endif /* _CRT_SECURE_NO_WARNINGS */
 #define _CRT_SECURE_NO_DEPRECATE	1
 #define _CRT_NONSTDC_NO_DEPRECATE	1
+
+#include    <windows.h>
+#include    <direct.h>
+#include    <io.h>
+
 #endif /* _MSC_VER */
+
+#include    <stdio.h>
+#include    <stdlib.h>
 
 #define wbStmt(stmt)        stmt
 

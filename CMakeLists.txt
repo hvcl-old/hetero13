@@ -16,13 +16,13 @@ if(CUDA_FOUND)
     # about this compiler argument
     if (MSVC)
         set(CUDA_NVCC_FLAGS "")
-    else
+    else (MSVC)
         set(CUDA_NVCC_FLAGS "
                                 -gencode;arch=compute_20,code=sm_20; 
                                 -gencode;arch=compute_11,code=sm_11; 
                                 -gencode;arch=compute_12,code=sm_12;
                                 -gencode;arch=compute_13,code=sm_13;")
-    endif
+    endif (MSVC)
 
     # add -Wextra compiler flag for gcc compilations
     if (UNIX)
